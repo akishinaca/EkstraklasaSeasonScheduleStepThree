@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekstraklasa Seasons Schedule</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Red+Hat+Text:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-bg">
+            <h1>Ekstraklasa Season Schedule</h1>
+        </div>
+        <div class="header-shadow"></div>
+    </header>
+
+    <div class="filter">
+        <label for="season-select">Choose a season:</label>
+        <select name="season" id="season-select">
+            <option selected disabled>--All--</option>
+            <option value="20_21">Ekstraklasa 20/21</option>
+            <option value="21_22">Ekstraklasa 21/22</option>
+            <option value="22_23">Ekstraklasa 22/23</option>
+        </select>
+
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th colspan="2" class="teams">Team names</th>
+                <th>Match date</th>
+                <th>Stadium</th>
+                <th class="half-time">Half time</th>
+                <th class="score">Final score</th>
+            </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+    </table>
+    
+    <script src="./main.js"></script>
+</body>
+</html>

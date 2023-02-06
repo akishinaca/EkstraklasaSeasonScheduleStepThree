@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 62,5%;
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/football-g33c4e201c_1920.jpg');
+    background-position: 55% 65%;
+}
+
+.header-bg h1, label, option, select {
+    font-family: 'Nixie One', cursive;
+}
+
+.header-bg h1 {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 100;
+    
+    color: #fff;
+    z-index: 10;
+}
+
+.header-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(42, 30, 206, 0.7);
+    z-index: 1;
+}
+
+.filter {
+    width: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 40px;
+}
+
+label {
+    font-size: 2rem;
+    padding-right: 2rem;
+}
+
+select {
+    width: 17rem;
+    text-align: center;
+    outline: none;
+}
+
+select option, select {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.table{
+    width: 1500px;
+    text-align: center;
+}
+
+.table th,
+.table td {
+    padding: 15px 25px;
+}
+
+.table th {
+    background: rgb(54,48,148);
+    background: linear-gradient(180deg, rgba(54,48,148,1) 0%, rgba(55,184,191,1) 70%, rgba(0,212,255,1) 94%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 1.2rem;
+}
+
+.half-time {
+    width: 10%;
+    padding: 15px 10px;
+}
+
+
+.table tbody tr:nth-of-type(even){
+    background-color: #edebeb;
+}
+
+.winner {
+    background-color: rgba(85, 194, 12, 0.7);
+}
+
+.loser {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+.draw {
+    background-color: rgba(255, 165, 0, 0.7);
+}
